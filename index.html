@@ -1,11 +1,98 @@
 <!DOCTYPE html>
+    <style>
+        body, a, p {
+            font-family: Arial, sans-serif;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .tl {
+            display: inline-block;
+            padding-left: 15px;
+            color: #000;
+            opacity: 0.75;
+            padding-top: 15px;
+        }
+
+        .tr {
+            display: block;
+            padding-right: 15px;
+            color: #000;
+            opacity: 0.75;
+            padding-top: 15px;
+            position: absolute;
+            left: 83%;
+            top: 11px;
+            margin-bottom: 7px 0 0 20px;
+        }
+
+        #tr1 {
+            position:absolute;
+            left: 90%;
+            top: 0px;
+            margin-bottom: 7px 0 0 20px;
+        }
+
+        #google-img {
+            width: 500;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%
+        }
+
+        .searchbar {
+            position: relative;
+            top: 60%;
+            left: 37%;
+            margin-top: 37px;
+            font-size: 16px;
+        }
+
+        .barcontainer {
+            padding: 5px 8px 0 16px;
+
+        }
+
+        .searchcontainer {
+            
+        }
+
+    </style>
 <html>
-    <img href="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="300">
+    <body>
+    <div>
+        <a class="tl" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+        <a class="tl" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+    </div>
+    
+    <div>
+        <a class="tr" href="https://mail.google.com/mail/u/0/?ogbl#">Gmail</a>
+    </div>
+    <div id="tr1">
+        <a class="tr" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+
+    </div>
+
+    <div> 
+        <img id="google-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+<div class="searchcontainer"> 
+    <div class="barcontainer">
+        <input class="searchbar" maxlength="2048" type="text">
+    </div>
+</div>
 
 
 
 
 
-
-
+    </body>
 </html>
