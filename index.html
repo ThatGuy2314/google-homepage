@@ -21,16 +21,20 @@
             padding-top: 15px;
         }
 
+        .tl-box {
+            position: absolute;
+        }
+
         .tr {
-            display: block;
+            display: inline-block;
             padding-right: 15px;
             color: #000;
             opacity: 0.75;
             padding-top: 15px;
-            position: absolute;
-            left: 83%;
-            top: 11px;
-            margin-bottom: 7px 0 0 20px;
+        }
+
+        .tr-box {
+            text-align: right;
         }
 
         #tr1 {
@@ -41,54 +45,106 @@
         }
 
         #google-img {
-            width: 500;
+            height: 92px;
+            width: 272px;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 10%
+            padding-top: 109px;
+            margin-bottom: 30px;
         }
 
-        .searchbar {
-            position: relative;
-            top: 60%;
-            left: 37%;
-            margin-top: 37px;
-            font-size: 16px;
+        .bar {
+            padding-top: 12px;
+            padding-left: 150px;
         }
 
         .barcontainer {
-            padding: 5px 8px 0 16px;
-
+            height: 44px;
+            width: 482px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 24px;
+            margin: auto;
+            z-index: 3;
+            border: 1px solid #dfe1e5;
         }
 
         .searchcontainer {
+  
+        }
+
+
+
+        .bluebtn {
+            border: 1px solid #4285f4;
+            font-weight: bold;
+            background: #4285f4;
+            color: white;
+            display: inline-block;
+            line-height: 28px;
+            padding: 0 12px;
+            border-radius: 2px;
+            margin-right: 15px;
+        }
+
+        #mglass {
+            width: 20px;
+            height: 20px;
+            opacity: .75;
+            float: left;
+            margin-right: 10px;
+            position: relative;
+            right: 135px;
             
         }
+
+        .searchbar {
+            min-width: 420px;
+            font-size: 16px;
+            text-align: start;
+            margin-top: 0px;
+            position: relative;
+            right: 135px;
+            border: none;
+            outline: none;
+        }
+
+        .searchbox {
+            display: flex;
+            flex: 100%;
+        }
+
 
     </style>
 <html>
     <body>
-    <div>
-        <a class="tl" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-        <a class="tl" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
-    </div>
+        <div class="tl-box">
+            <a class="tl" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+            <a class="tl" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+         </div>
     
-    <div>
-        <a class="tr" href="https://mail.google.com/mail/u/0/?ogbl#">Gmail</a>
-    </div>
-    <div id="tr1">
-        <a class="tr" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+        <div class="tr-box">
+            <a class="tr" href="https://mail.google.com/mail/u/0/?ogbl#">Gmail</a>
+            <a class="tr" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+            <a class="tr" href="https://about.google/intl/en/products/?tab=wh&tip=translation">Apps</a>
+            <a class="bluebtn" href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fhl%3Den-US&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign In</a>
+        </div>
 
-    </div>
+        <div> 
+            <img id="google-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="20px" height="20px"> 
+        </div>
 
-    <div> 
-        <img id="google-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    </div>
-<div class="searchcontainer"> 
-    <div class="barcontainer">
-        <input class="searchbar" maxlength="2048" type="text">
-    </div>
-</div>
+        <div class="barcontainer">
+            <div class="bar">
+                <div>
+                    <img id="mglass" src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png">
+                </div>
+                <div class="searchbox">
+                    <input class="searchbar" maxlength="2048" type="text">
+                </div>
+            </div>
+        </div>
 
 
 
