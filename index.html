@@ -50,7 +50,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            padding-top: 109px;
+            padding-top: 141px;
             margin-bottom: 30px;
         }
 
@@ -70,11 +70,10 @@
             border: 1px solid #dfe1e5;
         }
 
-        .searchcontainer {
-  
+        .barcontainer:hover {
+            box-shadow: 0px 1px 6px 0 rgba(32,33,36,0.28);
+            border-color: rgba(223,225,229,0);
         }
-
-
 
         .bluebtn {
             border: 1px solid #4285f4;
@@ -115,6 +114,38 @@
             flex: 100%;
         }
 
+        .search {
+            background-color: #f2f2f2;
+            border: none;
+            border-radius: 4px;
+            color: #5F6368;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 100px, 4px;
+            padding: 10px 16px 10px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            margin: 0 4px 0 4px;
+        }
+
+        .greybtnbox {
+            display: block;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .search:hover {
+            text-decoration: none;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background-color: #f8f8f8;
+            border: 1px solid #c6c6c6;
+            color: #222;
+        }
+
+        .bluebtn:hover {
+            text-decoration: none;
+        }
 
     </style>
 <html>
@@ -145,6 +176,12 @@
                 </div>
             </div>
         </div>
+        <div class="greybtnbox"> 
+            <a class="search">Google Search</a>
+            <a class="search">I'm Feeling Lucky</a>
+        </div>
+
+
 
 
 
